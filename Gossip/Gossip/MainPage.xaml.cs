@@ -33,12 +33,14 @@ namespace Gossip
             if (Library.Recording)
             {
                 Library.Stop();
-                Record.Icon = new SymbolIcon(Symbol.Memo);
+                RecordButton.Content = "Whisper to Azure";
+
             }
             else
             {
                 Library.Record();
-                Record.Icon = new SymbolIcon(Symbol.Microphone);
+                RecordButton.Content = "Stop!";
+
             }
         }
 

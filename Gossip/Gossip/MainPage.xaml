@@ -6,17 +6,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-          <Page.BottomAppBar>
+          <!--<Page.BottomAppBar>
             <AppBar IsOpen="True" IsSticky="True">
                 <StackPanel Orientation="Horizontal">
                     <AppBarButton Name="Record" Icon="Memo" Label="Record" Click="Record_Click"/>
                     <AppBarButton Name="Play" Icon="Play" Label="Play" Click="Play_Click"/>
                 </StackPanel>
             </AppBar>
-        </Page.BottomAppBar>
+        </Page.BottomAppBar>-->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-  
-
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+ 
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Source="Assets\robotwhisper.png"></Image>
+        <Button Name="RecordButton" Click="Record_Click" HorizontalAlignment="Center" Grid.Row="1" Content="Whisper to Azure"></Button>
     </Grid>
 
 </Page>
